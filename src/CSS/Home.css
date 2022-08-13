@@ -11,7 +11,9 @@
    justify-content: space-around;
 }
 
-
+button{
+    cursor: pointer;
+}
 .homefirstimage
 {
             width: 50%;

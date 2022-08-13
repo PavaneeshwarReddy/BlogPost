@@ -3,12 +3,14 @@ import "../CSS/Home.css"
 import FirstImage from '../Images/HomePage1.png'
 import { useNavigate } from "react-router-dom"
 function Home() {
-
-  const login = false;
-  const navigate = useNavigate();
-  const gotoLoginPage = () => {
-    navigate("/login");
-  }
+    const navigate = useNavigate();
+    const login=true;
+    const gotoLogin=()=>{
+          navigate("/login");
+    }
+    const gotoBlogs=()=>{
+      navigate("/blogs");
+    }
 
   return (
     <div className='homepage'>
@@ -21,7 +23,7 @@ function Home() {
 
           <div className='homebuttonpage'>
           {
-            login === false ? <button onClick={gotoLoginPage}>login</button> : <button>Blogs</button>
+            !localStorage.getItem("isAuth") ? <button style={{cursor:"pointer"}} onClick={gotoLogin}>login</button> : <button style={{cursor:"pointer"}}  onClick={gotoBlogs}>Blogs</button>
           }
           </div>
          

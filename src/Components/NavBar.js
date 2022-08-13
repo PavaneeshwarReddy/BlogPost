@@ -1,8 +1,16 @@
-
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import {auth} from '../Firebase/FireBaseConfig'
 import '../CSS/NavBar.css'
 function NavBar() {
+  const navigate =  useNavigate();
+ 
+  const UserLogOut=()=>{
+          localStorage.clear();
+          
+          navigate("/");
+  }
   return (
     <div >
         <div className='navbar'>
@@ -14,7 +22,9 @@ function NavBar() {
                 <Link to="/">Home</Link>
                 <Link to="/blogs">Blogs</Link>
                <Link to="/createpost">CreatePost</Link>
-                <Link to="/login">Login</Link>
+               {
+                 localStorage.getItem("isAuth")?<Link onClick={UserLogOut} to="/">Logout</Link>:<Link to="/login">Login</Link>
+               }
                 
                 </div>
 
