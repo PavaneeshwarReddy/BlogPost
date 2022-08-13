@@ -1,0 +1,59 @@
+.loginpage
+{
+    background-image: url("../Images/hi3.png");
+    width: 100%;
+    height: 93.2vh;
+    object-fit: fill;
+    overflow: hidden;
+
+}
+
+
+.loginbox
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 440px;
+    height: 440px;
+ 
+    /* background-color: rgba(253, 253, 253, 0.1); */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+   
+}
+
+.loginimage
+{
+       width: 440px;
+       height: 350px;
+}
+
+.googlebuttonflex
+{
+  
+    display: flex;
+    flex-direction: row;
+   
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    align-self: center;
+
+}
+
+.googlelogo
+{
+    width: 50px;
+}
+
+.googlebuttonflex{
+    cursor: pointer;
+}
+
