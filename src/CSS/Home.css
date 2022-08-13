@@ -18,6 +18,7 @@ button{
 {
             width: 50%;
             height: 90%;
+            
 }
 p{
     color: rgb(102, 102, 102);
@@ -26,6 +27,7 @@ p{
 {
     width: 25%;
     height: 90%;
+    opacity: 0;
 }
 
 .homebrandspace

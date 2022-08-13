@@ -1,7 +1,7 @@
 import React from 'react'
 import "../CSS/Login.css"
-import LoginLogo from '../Images/hi4.gif'
-import googlelogo from '../Images/gogolelogo.png'
+// import LoginLogo from '../Images/googlelogo.png'
+import googlelogo from '../Images/googlelogo.png'
 import {useNavigate} from 'react-router-dom'
 import {GoogleButton} from 'react-google-button'
 import {signInWithPopup} from 'firebase/auth'
@@ -23,7 +23,7 @@ function Login() {
     <div className='loginpage'>
     
                 <button className='loginbox'  onClick={UserLogin}>
-                      <img className='loginimage' src={LoginLogo}></img>
+                      <img className='loginimage' src={googlelogo}></img>
                      
                            
                             <button className='googletext'>Signin with google</button>
