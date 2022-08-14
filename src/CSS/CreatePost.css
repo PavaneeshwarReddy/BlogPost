@@ -13,9 +13,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgba(255, 255, 255, 0.327);
+    /* background-color: rgba(255, 255, 255, 0.327); */
+    background-color: white;
+    border:1px solid rgb(185, 185, 185);
+
     backdrop-filter: blur(50px);
-    border-radius: 10px;
+    border-radius: 20px;
     width: 480px;
     height: 500px;
     padding: 20px;
@@ -24,7 +27,7 @@
 .titleinput
 {
     all: unset;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(192, 192, 192, 0.1);
     padding: 10px;
     border-radius: 10px;
 }
@@ -32,15 +35,17 @@
 .titlecreatepost
 {
     text-align: center;
-    color: rgb(126, 126, 126);
+    color: rgb(148, 148, 148);
 }
 
 .bloginput
 {
     
     all: unset;
-    background-color: rgba(0, 0, 0, 0.1);
+
+    background-color: rgba(192, 192, 192, 0.1);
     border-radius: 10px;
+    padding: 10px;
 }
 
 .submitcreatepost
@@ -50,7 +55,8 @@
     width: 240px;
     height: 30px;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(157,189,181);
+    color: white;
     backdrop-filter: blur(100px);
     border-radius: 10px;
     
@@ -78,12 +84,13 @@ Modal
 
 .createpostmodal
 {
-   
+   border:1px solid rgb(185, 185, 185);
     width: 600px;
    
     height: 600px;
-    background-color: rgba(255, 255, 255, 0.322);
-    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -102,7 +109,7 @@ Modal
 .createpostmodalflex1
 {
     width: 550px;
-    
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,3 +117,11 @@ Modal
 
 .headingguidelines
 {display: inline;}
+
+
+.contentwriting
+{
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}

@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import guidelines from "../Images/guidelineslogo.png"
 import Modal from "react-modal"
 import cross from "../Images/cross.png"
+import contentwriting from "../Images/contentwriting.gif"
 
 function CreatePost() {
   //react form validation
@@ -53,11 +54,23 @@ function CreatePost() {
                           <button onClick={closemodal}><img className='cross' src={cross}></img></button>
                           </div>
 
-                          <div className='createpostmodalflex2'>
-                                      
+                         
+                                        <img src={contentwriting} className="contentwriting"></img>
+                            <h3 style={{color:"green"}}>Title:</h3>
+                            <ul>
+                            <li>Field should not be empty</li>
+                              <li>It must of length less than or equal to 50</li>
+                              
+                            </ul>
+                            <h3 style={{color:"blueviolet"}}>Content:</h3>
+                            <ul>
+                            <li>Field should not be empty</li>
+                              <li>It must of length less than or equal to 300</li>
+                              
+                            </ul>
 
 
-                          </div>
+                        
       </Modal>
 
 
