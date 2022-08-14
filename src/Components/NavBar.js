@@ -23,7 +23,7 @@ function NavBar() {
                 <Link to="/blogs">Blogs</Link>
                <Link to="/createpost">CreatePost</Link>
                {
-                 localStorage.getItem("isAuth")?<Link onClick={UserLogOut} to="/">Logout</Link>:<Link to="/login">Login</Link>
+                 localStorage.getItem("isAuth")?<Link onClick={UserLogOut} className="logoutcolor" to="/">Logout</Link>:<Link className='logincolor' to="/login">Login</Link>
                }
                 
                 </div>
