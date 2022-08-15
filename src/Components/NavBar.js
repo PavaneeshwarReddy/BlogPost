@@ -21,11 +21,15 @@ function NavBar() {
                 <div className='navbar_items_end'>
                 <Link to="/">Home</Link>
                 <Link to="/blogs">Blogs</Link>
-               <Link to="/createpost">CreatePost</Link>
+                <Link to="/creator">Creator</Link>
+                {
+                 localStorage.getItem("isAuth")?<Link to="/createpost">CreatePost</Link>:<></>
+               }
+               
                {
                  localStorage.getItem("isAuth")?<Link onClick={UserLogOut} className="logoutcolor" to="/">Logout</Link>:<Link className='logincolor' to="/login">Login</Link>
                }
-                
+              
                 </div>
 
             </div>

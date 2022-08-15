@@ -14,7 +14,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     /* background-color: rgba(255, 255, 255, 0.327); */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.178);
     border:1px solid rgb(185, 185, 185);
 
     backdrop-filter: blur(50px);
@@ -27,7 +27,7 @@
 .titleinput
 {
     all: unset;
-    background-color: rgba(192, 192, 192, 0.1);
+    background-color: rgba(160, 160, 160, 0.3);
     padding: 10px;
     border-radius: 10px;
 }
@@ -43,9 +43,13 @@
     
     all: unset;
 
-    background-color: rgba(192, 192, 192, 0.1);
+    background-color: rgba(160, 160, 160, 0.3);
     border-radius: 10px;
     padding: 10px;
+}
+
+textarea::-webkit-scrollbar{
+    
 }
 
 .submitcreatepost
@@ -90,7 +94,8 @@ Modal
     height: 600px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.178);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -101,8 +106,8 @@ Modal
 
 .cross
 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -121,7 +126,41 @@ Modal
 
 .contentwriting
 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     align-self: center;
 }
+
+.createpostheadings
+{
+    color: rgb(90, 160, 240);
+}
+
+
+
+
+.createloadingmodal
+{
+    all: unset;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+    position: absolute;
+
+   
+}
+
+.loadingimage
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+

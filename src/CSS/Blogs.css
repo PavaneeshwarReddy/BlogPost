@@ -1,0 +1,84 @@
+.blogspage
+{
+    background-image: url("../Images/hi5.png");
+    min-height: 93.1vh;
+
+  
+   
+}
+
+
+.allblogs{
+    display: flex;
+    
+    flex-direction: column;
+}
+
+
+.blogpost
+{
+    
+    align-self: center;
+    width: 700px;
+    background-color: rgba(255, 0, 0, 0);
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.userblogcontent
+{
+    background-color: rgba(68, 105, 98, 0.322);
+    width: 700px;
+    backdrop-filter: blur(10px);
+    height: 400px;
+    border-radius: 10px;
+
+}
+
+.userblogcontent
+{
+    padding: 40px;
+    
+}
+
+.headings
+{
+   color: white;
+}
+.normal12
+{
+    margin-left: 30px;
+    color: rgb(18, 4, 68);
+}
+
+.normal123
+{
+    margin-left: 70px;
+   color: rgb(18, 4, 68);
+}
+.normal
+{
+    color: rgb(18, 4, 68);
+}
+
+.headings123
+{
+    position: absolute;
+    bottom: 10px;
+    
+    color:white;
+    
+}
+
+
+
+
+
+

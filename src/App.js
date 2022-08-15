@@ -6,6 +6,7 @@ import CreatePost from './Components/CreatePost';
 import Login from './Components/Login';
 import NavBar from './Components/NavBar';
 import Blogs from './Components/Blogs';
+import Creator from './Components/Creator';
 function App() {
   const [userAuth,setUserAuth] = useState(false);
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/createpost' element={<CreatePost />}></Route>
+        <Route path='/creator' element={<Creator />}></Route>
 
       </Routes>
     </div>
